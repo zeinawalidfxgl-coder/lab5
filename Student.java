@@ -1,4 +1,5 @@
-package backend;
+
+import java.util.Comparator;
 
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
@@ -7,8 +8,9 @@ package backend;
 
 /**
  *
- * @author Dell
+ * @author Eman
  */
+
 public class Student {
     private int studentID;
     private String fullName;
@@ -77,14 +79,13 @@ public class Student {
         this.gpa = gpa;
     }
 
-    //Line representation
-    public String lineRepresenation() {
-      return studentID + "," + fullName + "," + age + "," + gender + "," + department + "," + gpa;
-  }
+    // Line representation
+   // public String lineRepresenation() {
+       // return studentID + "," + fullName + "," + age + "," + gender + "," + department + "," + gpa;
+   // }
 @Override
     public String toString() {
         return studentID + "\t" + fullName + "\t" + age + "\t" + gender + "\t" + department + "\t" + gpa ;
     }
- 
-    
+
 }
